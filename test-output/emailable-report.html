@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">9.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.RestApi.TrelloApi.PutTest</td><td><a href="#m1"><b>updateList1</b>  </a></td><td class="numi">1</td><td>1560323347505</td><td class="numi">748</td></tr><tr class="failedodd"><td><a href="#m2"><b>updateCard2</b>  </a></td><td class="numi">1</td><td>1560323349901</td><td class="numi">800</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="9">com.RestApi.TrelloApi.PutTest</td><td><a href="#m3"><b>postBoard</b>  </a></td><td class="numi">1</td><td>1560323344508</td><td class="numi">1516</td></tr><tr class="passedodd"><td><a href="#m4"><b>postList1</b>  </a></td><td class="numi">1</td><td>1560323346026</td><td class="numi">784</td></tr><tr class="passedodd"><td><a href="#m5"><b>postList2</b>  </a></td><td class="numi">1</td><td>1560323346813</td><td class="numi">688</td></tr><tr class="passedodd"><td><a href="#m6"><b>postCard1</b>  </a></td><td class="numi">1</td><td>1560323348257</td><td class="numi">908</td></tr><tr class="passedodd"><td><a href="#m7"><b>postCard2</b>  </a></td><td class="numi">1</td><td>1560323349167</td><td class="numi">730</td></tr><tr class="passedodd"><td><a href="#m8"><b>postLabel1</b>  </a></td><td class="numi">1</td><td>1560323350705</td><td class="numi">814</td></tr><tr class="passedodd"><td><a href="#m9"><b>postLabel2</b>  </a></td><td class="numi">1</td><td>1560323351521</td><td class="numi">816</td></tr><tr class="passedodd"><td><a href="#m10"><b>postAttach</b>  </a></td><td class="numi">1</td><td>1560323352340</td><td class="numi">816</td></tr><tr class="passedodd"><td><a href="#m11"><b>postAttach2</b>  </a></td><td class="numi">1</td><td>1560323353159</td><td class="numi">696</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.RestApi.TrelloApi.PutTest:updateList1</h2>
+<div style="padding-left:3em">
+<p>expected [200] but found [400]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at com.RestApi.TrelloApi.PutTest.updateList1(PutTest.java:61)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.RestApi.TrelloApi.PutTest:updateCard2</h2>
+<div style="padding-left:3em">
+<p>expected [200] but found [400]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at com.RestApi.TrelloApi.PutTest.updateCard2(PutTest.java:98)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.RestApi.TrelloApi.PutTest:postCard2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.RestApi.TrelloApi.PutTest:postLabel1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.RestApi.TrelloApi.PutTest:postList1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.RestApi.TrelloApi.PutTest:postList2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.RestApi.TrelloApi.PutTest:postBoard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.RestApi.TrelloApi.PutTest:postCard1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.RestApi.TrelloApi.PutTest:postAttach</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.RestApi.TrelloApi.PutTest:postLabel2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.RestApi.TrelloApi.PutTest:postAttach2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
